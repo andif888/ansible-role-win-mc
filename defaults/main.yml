@@ -1,0 +1,12 @@
+---
+# defaults file for ansible-role-win-mc
+
+# @var win_mc_download_validate_certs:description: If false, SSL certificates will not be validated.
+win_mc_download_validate_certs: true
+
+# @var win_mc_download_url:description: Download URL
+win_mc_download_url: "https://dl.min.io/client/mc/release/windows-amd64/mc.exe"
+
+# @var win_mc_install_folder:description: Installation folder
+win_mc_install_folder: '%Windir%'
+...

@@ -1,0 +1,9 @@
+---
+# tasks file for ansible-role-win-mc
+- name: Download and install to {{ win_mc_install_folder }}
+  ansible.windows.win_get_url:
+    url: '{{ win_mc_download_url }}'
+    dest: '{{ win_mc_install_folder }}\mc.exe'
+    force: no
+    validate_certs: "{{ win_mc_download_validate_certs }}"
+...
